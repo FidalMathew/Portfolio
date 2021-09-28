@@ -1,0 +1,507 @@
+.headers
+{text-align: center;
+    margin-bottom: 60px;
+    font-size: 2em;
+    color: var(--green);
+}
+
+.skills {
+    min-height: 100vh;
+    padding-top: 6em;
+    padding-left: 5em;
+    padding-right: 5em;
+    /* font-size: 100px; */
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(17 18 35);
+    background-image: linear-gradient(rgb(17 18 35), black);
+}
+
+.skills p{
+    width: 70%;
+    color: white;
+    font-size: 27px;
+    margin-bottom: 32px;
+}
+
+.skills_content{
+    display: flex;
+    color: white;
+    width: 80%;
+}
+
+.skill_name img{
+    width:15%;
+}
+
+.skills_content .h{
+font-size: 20px;
+margin-bottom: 15px;
+}
+
+.skills_content span {
+    position: relative;
+    font-size: 18px;
+    left: 10px;
+    bottom: 24px;
+}
+
+.gif_learn
+{
+    width:140%;
+}
+.div{
+    font-size:25px;
+    position:relative;
+    top:50px;
+}
+/* contact */
+
+.contact {
+    /* padding-left: 96px;
+    padding-right: 96px; */
+    /* font-size: 100px; */
+    padding: 18%;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(17 18 35);
+    background-image: linear-gradient(rgb(17 18 35), black);
+    
+    /* rgb(17 18 35)  blue shade looks good*/ 
+}
+
+
+.center_form{
+   
+    display: flex;
+    flex-direction: column;
+  background-color: white;
+  padding: 45px;
+}
+
+.center_form .in{
+    margin-bottom: 35px;
+}
+
+.center_form .in label{
+    font-size: 22px;
+    margin-right: 75px;
+}
+.submit_button{
+    font-size: 17px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: #21E157;
+    transition: 0.3s;
+    border-radius: 2px;
+    position: relative;
+    left: 40%;
+}
+.submit_button:hover{
+    background-color: #0f101f;
+}
+
+/* footer */
+
+.footer{
+    padding-bottom: 5px;
+}
+.footer_icons{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_i{
+    margin-left: 25px;
+}
+
+/*---------- Work ---------*/
+
+
+.work{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color:black;
+    padding: 50px;
+    padding-top: 80px;
+    
+}
+
+
+.work .work_projects{
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project_prop{
+    color: black;
+    background-color: #ffffff;
+    width: 28%;
+    box-sizing: border-box;
+    padding: 4px;
+    cursor: pointer;
+    transition-duration: .5s;
+    position: relative;
+    margin-bottom: 50px;
+}
+.project_img{
+    width: 100%;
+}
+
+
+.project_prop::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+   transition: 0.2s;
+
+
+}
+
+.project_prop:hover:before{
+    background-color: rgb(4, 189, 75);
+    /* opacity: 70%; */
+}
+
+.hidden{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 10;
+
+} 
+ 
+
+
+.project_prop:hover .hidden{
+    display: block;
+}
+
+.code_img{
+    width: 10%;
+    position: absolute;
+    left: 85%;
+    bottom: 2%;
+}
+
+.link_img{
+    width: 22%;
+    position: relative;
+    left: 41%;
+    top: 30%;
+}
+
+
+
+/* <---Responsive design----> */
+
+@media only screen and (max-width: 1250px) and (min-width: 1080px)
+{
+
+    .col-1 h1 {
+        font-size: 3.2em;
+       
+        line-height: 1.5em;
+    }
+
+    .about_box {
+        
+        padding: 1.2em;
+        
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1080px) 
+
+{
+    .menu{
+        display: none;
+    }
+
+    .content{
+        padding-left: 5em;
+        flex-direction: column;
+    }
+    .col-1 {
+        margin-left: 3em;
+        margin-bottom: 4em;
+    }
+    .col-1 h1 {
+        font-size: 5.7em;
+        color: white;
+        display: inline-block;
+    }
+
+    .col-1 .button{
+        width: 30%;
+        padding: 0.3em;
+        font-size: 2em;
+    }
+
+    .me_img {
+        width: 92%;
+        left: 0em;}
+
+  .social_icons {
+         position: absolute;
+     bottom: 3em;
+            left: 20%;
+            z-index: 2;
+        }
+
+        .home_i {
+            width: 5em;
+        }            
+
+    .headers{
+        font-size: 3em;
+    }    
+
+    .aboutme {
+        min-height: 0;
+        padding-top: 4em;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 8em;
+       
+    }
+
+    .about_box {
+        background-color: white;
+        font-size: 1.5em;
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+    }
+    .skills_content{
+        display: flex;
+    color: white;
+    /* width: 80%; */
+    flex-direction: column;
+    }
+
+    .skills_content span {
+        position: relative;
+        font-size: 2em;
+        left: 2em;
+        
+    }
+    .skills_content .h {
+        font-size: 3em;
+        margin: 1em;
+    }
+    .skills p {
+        width: 100%;
+        
+        font-size: 4em;
+        margin-bottom: 32px;
+    }
+
+    .gif_learn
+{margin-top: 5em;
+    width:100%;
+}
+.div{
+    font-size: 2.1em;
+    padding: 1em;
+}
+.work{
+    min-height: 0;
+}
+
+.project_prop{
+    width: 40%;
+}
+.navbar a {
+    
+    font-size: 2.5em;
+}
+.contact {
+    /* font-size: 100px; */
+    padding: 11%;
+}
+
+@media only screen and (max-width: 720px){ 
+.navbar a {
+    font-size: 1.5em;
+}
+}
+.col-1 h1 {
+    font-size: 2.7em;
+    color: white;
+    display: block;
+}
+
+.content {
+    padding-left: 0;
+    
+}
+.col-1 .button {
+    width: 45%;
+    padding: 0.3em;
+    font-size: 1.3em;
+}
+
+.home_i {
+    width: 2em;
+}
+
+.headers {
+    font-size: 2em;
+}
+
+
+/* about */
+.about_col_2::before {
+    content: "";
+    width: 3px;
+    position: absolute;
+    left: -7px;
+    height: 31%;
+    top: 4px;
+    background-color: #3fff53;
+    z-index: 3;
+}
+
+.about_col_2 {
+    position: relative;
+    right: -5%;
+}
+
+.about_box {
+    
+    font-size: 0.5em;
+    
+}
+
+.aboutme {
+    min-height: 0;
+    padding-bottom: 0em;
+}
+
+.skills {
+   
+    padding-left: 2em;
+    padding-right: 2em;
+   
+}
+
+.skills p {
+    width: 100%;
+    font-size: 1.6em;
+    margin-bottom: 32px;
+}
+.skills_content .h {
+    font-size: 1.5em;
+    margin: 1em;
+}
+.skills_content span {
+    position: relative;
+    font-size: 1em;
+    left: 2em;
+    bottom: 10px;
+}
+.div {
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.work .work_projects {
+    padding-left: 0; 
+     padding-right: 0;
+  
+}
+.project_prop {
+    width: 100%;
+}
+
+
+
+
+.center_form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+}
+
+
+.center_form input{
+    margin-top: 20px;
+    position: relative;
+    right:0 ;
+    width: 70% !important;
+}
+
+.center_form textarea{
+    width: 80% !important;
+    height: 100px !important;
+    right: 0 !important; 
+    margin-top: 20px !important;
+    position: relative;
+}
+
+.submit_button {
+   
+    left: 15%;
+}
+
+.center_form label{
+    margin-top: 20px;
+    position: relative;
+    bottom: 0 !important;
+   
+}
+
+.footer span{
+    position: relative;
+    left: 10%;
+}
+
+.footer_icons {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bootstrap{
+    text-align: center;
+}
+
+.foot_social_icons{
+    text-align: center;
+}
+
+
+.content {
+    
+    padding-right: 0;
+}
+
+.navbar{
+    
+    padding-left: 2.5em;
+
+}
+.col-1 {
+    flex-basis: 60%;
+    padding-top: 3em;
+}
+}
+

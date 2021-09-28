@@ -1,0 +1,105 @@
+.content {
+    padding-left: 96px;
+    padding-right: 96px;
+    /* font-size: 100px; */
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(17 18 35);
+    background-image: linear-gradient(rgb(17 18 35), black);
+    
+    position: relative;
+    /* rgb(17 18 35)  blue shade looks good*/ 
+}
+
+
+.col-1 p{
+    font-size: 30px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes droptext {
+    0%   {  top:-200px; opacity: 70%;}
+  /* 25%  { top: -75px;}
+  50%  { top: -50px;}
+  75%  { top:-25px;} */
+  100% { left:0px; top:0px;}
+  }
+
+.col-1{
+    flex-basis:60% ;
+    
+    padding-top: 96px;
+}
+
+.text{
+    position: relative;
+    animation-name: droptext;
+  animation-duration: 1s ;
+  transition: ease-in;
+}
+.col-1 h1{
+    font-size: 3.8em;
+    color: white;
+    
+}
+
+
+.col-1 .name{
+    color:rgb(37 80 213);
+    font-size: 1em;
+    color: #28ec80;
+
+}
+.col-1 .button {
+    width: 28%;
+    padding: 7px;
+    background-color: #26c96f;
+    transition: 0.3s;
+    margin-top: 23px;
+    color: white;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+
+    
+}
+
+.col-1 .button:hover{
+    /* background-color: rgb(17 18 35); */
+    background-color: transparent;
+
+    transform: scale(1.05); 
+    border: 2px solid #28ec80;
+}  
+
+.social_icons{
+    position: absolute;
+    bottom: 2em;
+}
+.social_icons a{
+    margin-right: 24px;    
+    /* opacity: 70%; */
+    /* cursor: pointer; */
+     width: 35px; 
+     height: 28px;
+    /* height: fit-content; */
+}
+
+.home_i{
+    width: 2em;
+}
+.me_img{
+    width: 92%;
+    position: relative;
+    left: 8em;
+    
+} 
+
+
+
+/* Typing animation */
+

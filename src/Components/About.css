@@ -1,0 +1,41 @@
+.aboutme {
+    min-height: 100vh;
+    padding-top: 4em;
+    padding-left: 14%;
+    padding-right: 14%;
+    /* font-size: 100px; */
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(17 18 35);
+}
+
+.about_box{
+    background-color: white;
+    font-size: 1.3em;
+    padding:  4em;
+    display: flex;
+    justify-content: space-between;
+}
+.about_col_1 ul{
+    margin-top: 10px;
+    position: relative;
+    left: 15px;
+}
+
+
+
+.about_col_2
+{
+    position: relative;
+    right: 6% ;
+}
+
+.about_col_2::before{
+    content: "";
+    width: 9px;
+    position: absolute;
+    left: -33px;
+    height: 37%;
+    top: 4px;
+    background-color: #3fff53;
+    z-index: 3;
+}
